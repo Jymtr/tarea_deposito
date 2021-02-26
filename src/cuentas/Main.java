@@ -1,15 +1,23 @@
 package cuentas;
-
+/**
+ * @version 1.1
+ * @since 1.0
+ * @see CCuenta.java
+ * @author Juan y Moni
+ */
 public class Main {
 
     public static void main(String[] args) {
         operativa_cuenta(null);
     }
-
+    /**
+     * 
+     * @param cuenta the cuenta to set
+     */
     public static void operativa_cuenta(java.lang.Float cuenta) {
         CCuenta cuenta1;
         double saldoActual;
-
+        
         cuenta1 = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
         saldoActual = cuenta1.estado();
         System.out.println("El saldo actual es"+ saldoActual );
